@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+/* 热门品牌相关的样式 */
+
+#main .brand .left{
+     width:219px;
+     height: 355px;
+     float: left;
+     border-right: 1px solid #eaeaea;
+}
+
+#main .brand .left .swiper{
+  
+     position: relative;
+}
+
+#main .brand .left img {
+     width: 219px;
+     width: 219px;
+}
+
+#main .brand .left .control{
+     position: absolute;
+     top: 50%;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+     
+
+}
+
+#main .brand .left .control i{
+     display: block;
+     width: 22px;
+     height: 22px;
+     background-image: url("../img/kl-sprite-01.png");
+     
+}
+
+#main .left .control .prev{
+     float: left;
+     background-position: -625px -68px;
+}
+
+#main .left .control .next{
+     float: right;
+     background-position: -670px -67px;
+}
+
+#main .brand .left .txt{
+     width: 219px;
+     height: 136px;
+     background-color:#151515;
+     text-align: center;
+}
+
+#main .brand .left .txt span{
+     display: block;
+}
+
+#main .brand .left .txt .line{
+     width: 100px;
+     height: 2px;
+     background-color:#ff1e31;
+}
+
+#main .brand .left .title{
+     font-size: 20px;
+     font-weight: 700px;
+     color: #fff;
+     margin-top: 40px;
+}
+
+#main .brand .left .desc{
+     font-size: 14px;
+     color: #fff;
+     margin-top: 12px;
+}
+
+#main .brand .list{
+     width: 880px;
+     height: 354px;
+     float: left;
+     border-top: 1px solid #eaeaea;
+   
+}
+
+#main .brand .list li{
+    text-align: center;
+    position: relative;
+    float: left;
+    width: 219px;
+    height: 176px;
+    border-bottom: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;;
+    background-color: #fff;
+}
+
+#main .brand .list li:hover .active{
+     display: block;
+}
+
+#main .brand .list li:hover .desc{
+     display: none;
+}
+
+#main .brand .list li:hover .info{
+     transform: scale(.6);
+}
+
+#main .brand .list .info {
+     margin-top: 15px;
+     transition: transform .6s ease;
+     transform-origin: center 0;
+
+}
+
+#main .brand .list .desc{
+     margin-top: 10px;
+     font-size: 14px;
+     font-weight: 700;
+     color: #000;
+
+}
+
+#main .brand .list .active{
+     display: none;
+     position: absolute;
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     
+}
+
+#main .brand .list .active .focus{
+     position: absolute;
+     top:10px;
+     left:10px;
+     border:1px solid #999 ;
+     width: 52px;
+     height: 20px;
+     line-height: 20px;
+     border-radius: 20px;
+     text-align: center;
+}
+
+#main .brand .list .active .enter{
+     position: absolute;
+     bottom: 10px;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+}
+
+#main .brand .list .active .enter a{
+     display: block;
+     width: 80px;
+     height: 36px;
+     line-height: 32px;
+     border: 2px solid #ff1e3c;
+     border-radius:32px;
+     margin: 0 auto;
+     font-size: 14px;
+     color: #ff1e3c;
+     margin-top: 5px;
+}
+
+
+
+
+
+

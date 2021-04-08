@@ -1,0 +1,36 @@
+@charset "utf-8";
+body, button, input, select, textarea {
+    font: 12px/1.5 Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,
+    \5FAE\8F6F\96C5\9ED1,tahoma,simsun,\5b8b\4f53;
+    color: #999;
+    background-color: #f6f6f6;
+    overflow-x: hidden;
+}
+.wrap{
+   width: 1100px;
+   margin: 0 auto;
+}
+.clear-fix::after{
+    content:"";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+.clear-fix{
+    *zoom: 1;
+}
+/* 三横线图标 */
+.lineicon{
+    display: inline-block;
+}
+.lineicon i{
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 3px;
+}
+.lineicon .first{
+    margin-top: 0;
+}

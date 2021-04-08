@@ -1,0 +1,279 @@
+@charset "utf-8";
+/* 广告相关的样式 */
+#header .ad{
+    min-width: 1100px;
+    /* overflow: hidden; */
+    }
+#header .ad img{
+    /* 图片居中 */
+ position: relative;
+ transform: translate(-50%);
+ left: 50%;
+}
+/* 导航栏样式 */
+#header .nav a{
+    color: #999;
+    margin-left: 30px;
+    height: 30px;
+    float: left;
+}
+#header .nav a:hover{
+    color: #fff;
+}
+/* 左侧样式 */
+#header .nav{
+    height: 30px;
+    line-height: 30px;
+    background-color: #000;
+}
+#header .nav-left .welcome{
+  float: left;
+} 
+#header .nav-left .account{
+    float: left;
+}
+
+/* 二维码隐藏与显示 */
+#header .nav-left .account .phone{
+    position: relative; 
+ }
+
+ #header .nav-left .account .phone .code{
+     width: 128px;
+     height: 160px;
+     position: absolute;
+     top: 30px; 
+     border: 1px solid #eaeaee; 
+     left: 0px;
+     transform: translate(-50%);
+     margin-left: 50%;
+     display: none; 
+     z-index: 9;
+     background-color: #fff;
+     text-align: center;
+ }
+
+ #header .nav-left .account .phone .code img{
+     width: 116px;
+     height: 116px;
+ }
+ #header .nav-left .account .phone .code p{
+     line-height: 1.5;
+     display: block;
+     font-size: 14px;
+     text-align: center;
+     padding: 1px 0;
+     color: #000;
+ }
+ #header .nav-left .account .phone .arrow{
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    border-top: 1px solid #eaeaee;
+    border-left: 1px solid #eaeaee;
+    background-color: #fff;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#header .nav-left .account .phone span:hover+.code{
+    display: inline;
+}
+/* 右侧样式 */
+#header .nav-right,
+#header .nav-right .group1,
+#header .nav-right .group2
+{ 
+    float: right;
+}
+#header .nav-right .group2{
+    margin-left: 12px;
+   
+}
+#header .nav-right .group2 a{
+    margin-left: 0;
+    padding: 0  12px;
+}
+#header .nav-right .group2 a:hover{
+    background-color: #fff;
+    color: #ff1e32;
+}
+#header .nav-right .group2 i{
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    margin-left: 1px;
+    width: 0;
+    height: 0;
+    border: 4px solid #999;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    transition: ease-in transform .3s;
+    transform-origin: center 2px;
+}
+#header .nav-right .group2 a:hover i{
+    border-top-color:#ff1e32 ;
+    transform: rotate(180deg);
+}
+/* 个人中心 */
+#header .nav-right .group2 .centre{
+    position: relative;   
+}
+#header .nav-right .group2 .my-centre{
+    position: absolute;
+    z-index: 12;
+    width: 100px;
+    height: 300px;
+    text-align: center;
+    display: none;
+    top:30px;
+    left: -484px;
+    border: 1px solid #eaeaee;
+    background-color:#fff ;
+}
+#header .nav-right .group2 .my-centre a{
+    font-size: 10px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;   
+}
+/* 个人中心隐藏  */
+#header .nav-right .group2 .centre:hover ul{
+     display: block;     
+}
+/* 客户服务 */
+#header .nav-right .group2 .service{
+    position: relative;
+}
+#header .nav-right .group2 .my-service{
+    position: absolute;
+    z-index: 12;
+    width: 90px;
+    height: 120px;
+    text-align: center;
+    display: none;
+    top:30px;
+    left: -398px;
+    border: 1px solid #eaeaee;
+    background-color:#fff ;
+}
+/* 客户服务隐藏  */
+#header .nav-right .group2 .service:hover ul{
+    display: block;     
+}
+/* 充值中心 */
+#header .nav-right .group2 .invest{
+    position: relative;
+}
+#header .nav-right .group2 .my-invest{
+    position: absolute;
+    z-index: 12;
+    width: 90px;
+    height: 100px;
+    text-align: center;
+    display: none;
+    top:30px;
+    left: -315px;
+    border: 1px solid #eaeaee;
+    background-color:#fff ;
+}
+/* 充值中心隐藏  */
+#header .nav-right .group2 .invest:hover ul{
+    display: block;     
+}
+/* 消费者权益  */
+#header .nav-right .group2 .consumer-rights{
+    position: relative;
+}
+#header .nav-right .group2 .my-consumer-rights {
+    position: absolute;
+    z-index: 12;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    display: none;
+    top:30px;
+    left: -235px;
+    border: 1px solid #eaeaee;
+    background-color:#fff ;
+}
+/* 消费者权益隐藏 */
+#header .nav-right .group2 .consumer-rights:hover span{
+    display: block;  
+}
+/* 更多 */
+#header .nav-right .group2 .more{
+    position: relative;
+}
+#header .nav-right .group2 .my-more{
+    position: absolute;
+    z-index: 12;
+    width: 90px;
+    height: 120px;
+    text-align: center;
+    display: none;
+    top:30px;
+    left: -157px;
+    border: 1px solid #eaeaee;
+    background-color:#fff ;
+}
+/* 更过隐藏  */
+#header .nav-right .group2 .more:hover ul{
+    display: block;     
+}  
+/* logo-search相关样式 */
+#header .operation{
+    position: relative;
+    height: 100px;
+    background-color: #fff;
+}
+#header .operation img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+#header .operation .search{
+    position: absolute;
+    left: 450px;
+    top: 30px;
+    width: 410px;
+    padding: 6px 39px 6px 30px;
+    border: 2px solid #ff2337;
+    border-radius: 24px;
+    background-color: #fff;
+}
+#header .operation .search input{
+     height: 24px;
+     width: 410px;
+     background-color: #fff;
+}
+#header .operation .search input::placeholder{
+    font-style: italic;
+}
+#header .operation .search i{
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/kl-sprite-01.png");
+    background-position: -466px -667px;
+}
+#header .operation .search span{
+    position:absolute;
+    right: -2px;
+    top: -2px;
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    background-color:#ff2337;
+    border-radius:24px;
+    background: url("../img/icon-search.png")       
+    center #ff2337 no-repeat;
+}

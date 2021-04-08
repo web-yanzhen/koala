@@ -1,0 +1,232 @@
+@charset "utf-8";
+#top .tabbar{
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    color: #fff;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+
+#top .tabbar .category{
+    position: relative;
+    float: left;
+    width: 164px;
+    /* 颜色渐变 */
+    background: linear-gradient(90deg,red,#ff3264);
+}
+#top .tabbar .category span{
+   margin-left: 20px;
+}
+#top .tabbar .categories{
+      position:absolute;
+      z-index: 1;
+}
+
+#top .tabbar .categories li{
+     width: 164px;
+     background: linear-gradient(90deg,red,#ff3264);
+     border-bottom: 1px solid #fff;
+}
+
+#top .tabbar .categories a{
+     display: block;
+     height: 41px;
+     line-height: 41px;
+     padding: 0 3px 0 2px;
+}
+
+#top .tabbar .categories a:hover{
+    background: #fff;
+}
+
+#top .tabbar .categories img{
+    position: relative;
+    top:-2px;
+    left:10px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+#top .tabbar .categories a:hover img{
+    display: none;
+}
+
+#top .tabbar .categories  img.active{
+    display: none;
+}
+ 
+#top .tabbar .categories a:hover .active{
+    display: inline;
+    position: relative;
+    left:10px;
+}
+
+#top .tabbar .categories span{
+    font-size: 15px;
+    color: #fff;
+    margin-left: 30px;
+}
+
+#top .tabbar .categories a:hover span{
+    color:#ff1e32 ;
+}
+
+#top .tabbar .category .lineicon{
+    margin-left: 15px;
+}
+
+#top .tabbar .list{
+    float: left;
+    margin-left: 20px;
+}
+
+#top .tabbar .list a{
+    display: block;
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+#top .tabbar .list li{
+    float: left;
+    margin: 0 10px;
+}
+
+#top .tabbar .list a:hover{
+    color: #ff3264;
+}
+
+#top .tabbar .list .active{
+    color: #ff3264; 
+}
+/* 轮播图 */
+#top .banner{
+    position: relative;
+    overflow: hidden;
+   
+}
+
+#top .banner img{
+    /* z-index: -10; */
+    position: relative;
+    /* 1先向左移动图片自身的50% */
+    transform: translate(-50%);
+
+    /* 2再向右移动父元素的50% */
+    left : 50%;
+
+    min-width: 1100px;
+}
+
+#top .banner .swiper{
+    position: relative;
+    display: block;
+  
+}
+
+#top .banner .swiper .control{
+    display: none;
+    height: 68px;
+    position: absolute;
+    top:40%;
+    left: 0;
+    right: 0;
+    margin: 0 atuo;
+}
+
+#top .banner .swiper:hover .control{
+    display:inline-block;
+}
+
+#top .banner .swiper .control i{
+    display: block;
+    width: 34px;
+    height: 68px;
+    background-image: url("../img/kl-sprite-01.png");
+}
+
+#top .banner .swiper .control .prev{
+    float: left;
+    margin-left: 174px;
+    background-position: -625px -68px;
+}
+
+#top .banner .swiper .control .next{
+    float: right;
+    background-position: -670px -67px;
+}
+
+#top .banner .swiper .dots{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 60px;
+    
+}
+
+#top .banner .swiper .dots .dot{
+    position: absolute;
+    bottom: 25px;
+    margin-left: 500px;
+    
+}
+
+#top .banner .swiper .dots .dot i{
+    float: left;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background: #fff;
+    margin-right: 15px;
+}
+
+#top .banner .swiper .dots .dot i:hover{
+    background: #ff1e32;
+}
+
+/* 毛玻璃效果 */
+#top .banner .sellpoint{
+    position: absolute;
+    height: 45px;
+    line-height: 45px;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#top .banner .sellpoint .blur{
+    /* z-index: 5; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* top: 0; */
+    /* background: url("../img/banner-1.jpg")  bottom; */
+    filter: blur(4px);
+}  
+
+#top .banner .sellpoint ul{
+    position: relative;
+    z-index: 1;
+    margin-left: 60px;
+    height: 45px;
+    line-height: 45px;
+}
+
+#top .banner .sellpoint ul li{
+    float: left;
+    margin-left: 40px;
+}
+
+#top .banner .sellpoint ul li a{
+    font-size: 12px;
+    color: #fff;
+}
+
+#top .banner .sellpoint ul a:hover{
+    text-decoration: underline;
+}
+
+
