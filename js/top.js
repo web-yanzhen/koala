@@ -11,10 +11,10 @@
         var blur = document.getElementById("blur");
         var blurimg = blur.getElementsByTagName("img")[0];
         
-        var imgarr =["../考拉海购/img/banner-1.jpg","../考拉海购/img/banner-2.jpg",
-        "../考拉海购/img/banner-3.jpg","../考拉海购/img/banner-4.jpg",
-        "../考拉海购/img/banner-5.jpg","../考拉海购/img/banner-6.jpg",
-        "../考拉海购/img/banner-7.jpg","../考拉海购/img/banner-8.jpg"]
+        var imgarr =["img/banner-1.jpg","img/banner-2.jpg",
+        "img/banner-3.jpg","img/banner-4.jpg",
+        "img/banner-5.jpg","img/banner-6.jpg",
+        "img/banner-7.jpg","img/banner-8.jpg"]
         var index=0;
         var timer;
     
